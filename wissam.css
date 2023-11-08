@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+/* navgation */
+.page-title {
+    width: 40%;
+    height: inherit;
+    font-size: 2.25vw;
+    color: white;
+}
+.page-title > * {
+    text-decoration: none;
+    color: white;
+}
+.navlink-container {
+    width: 60%;
+    height: inherit;
+}
+.navlink-container, .page-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlink-container>* {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75vw;
+}
+.navigation {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* about section */
+.about-section {
+    background-color: rgb(68, 99, 99);
+    height: 25rem;
+}
+/* grid */
+.project-grid {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+
+}
+.project-card{
+    width: 150px;
+    aspect-ratio: 6/9;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+    margin: 1rem;
+    
+
+    transition: width 1000ms ease-out;
+}
+.project-card[aria-expanded="true"] {
+    width: 60vw;
+    height: 80vh;
+}
+.none-card {
+    display: none;
+}
+
