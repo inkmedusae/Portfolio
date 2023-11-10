@@ -54,6 +54,7 @@ body {
 
 }
 .project-card{
+    position: relative;
     width: 150px;
     aspect-ratio: 6/9;
     border-radius: 20px;
@@ -67,6 +68,18 @@ body {
 .project-card[aria-expanded="true"] {
     width: 60vw;
     height: 80vh;
+}
+/* css of after elements / the cards */
+.project-card::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(99, 86, 68);
+
+    position: absolute;
+    inset: -5% 0 1rem 2rem;
+    z-index: -1;
 }
 .none-card {
     display: none;
